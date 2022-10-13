@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <article>
+                    <form onsubmit="return false">
+                        <div>
+                            <label for="name">Geben Sie den Namen ein</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+
+                        <div>
+                            <input
+                                type="button"
+                                id="add"
+                                value="Hinzufügen"
+                                onclick="addName()"
+                            />
+                            <input
+                                type="button"
+                                id="remove"
+                                value="Rückgängig"
+                                onclick="removeName()"
+                            />
+                        </div>
+                    </form>
+                    <div class="class-list">
+                        <h2>Teilnehmer/-innen des Bootcamps</h2>
+                        <ol id="list"></ol>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <script src="assets/main.js"></script>
+    </body>
+</html>
